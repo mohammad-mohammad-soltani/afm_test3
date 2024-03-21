@@ -1,0 +1,201 @@
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: red;
+}
+.clear{
+	clear: both;
+}
+img{
+	border: 0;
+	max-width: 100%;
+}
+body{
+	font-family: irancell;
+	background-color: black;
+	direction: rtl;
+}
+#main{
+	max-width: 980px;
+	margin: 0 auto;
+	height:1383px;
+	
+}
+.background-dg{
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+}
+.top-bar{
+	background-color: rgb(230, 215, 188);
+	height: 100px;
+	position: relative;
+}
+.social ul{
+	margin-right: 40px;
+}
+.social img{
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-left: 5px;
+	margin-top: 15px;
+	padding: 10px 0px 0px 10px;
+}
+
+.logo img{
+	margin-right: 50px;
+	margin-top: 20px;
+}
+.search{
+	position: absolute;
+	top: 26px;
+	left: 50px;
+	float: right;
+}
+.search input{
+	width: 	190px;
+}
+form{
+	float: right;
+}
+.search button{
+	width: 10%;
+	left: 100px;
+	top: 100px;
+	
+}
+
+.top-menu{
+	height: 47px;
+	background-color: black;
+	
+	
+}
+.top-menu ul{
+	text-align: right;
+	margin-right: 10px;
+}
+.top-menu ul li {
+	list-style: none;
+	display: block;
+	float: right;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-decoration: none;
+	background-color: white;
+	border-radius: 5px;
+	padding: 5px;
+	
+	
+}.top-menu ul li a{color: black;}
+.btn{
+	margin-right: 400px;
+	top: auto;
+	margin-top: 5px;
+}
+
+.logo2{
+	height: 90px;
+	
+}
+.logo img{
+	margin-right: 100px;
+	margin-top: -2px;
+	
+}
+
+.modal fade{
+	direction: ltr;
+}
+.btn btn-primary dropdown-toggle{
+	direction: ltr;
+	text-align: left;
+}
+.top-menu ul{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	overflow: hidden;
+	background-color:#333333;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.title h2{
+	width: 10%;
+    margin-top: 1.5%;
+    margin-right: 45%;
+    color: white;
+    margin-bottom: 1.5%;
+    background: #ff0a0a;
+    border-radius: 3px;
+    box-shadow: 0 0 8px black;
+	text-align: center;
+}
+.content img{
+	border-radius:  15px 15px 0 0;
+	
+}
+.content .box{
+	width: 48%;
+	float: right;
+	margin-right: 15px;
+	text-align: center;
+	box-shadow: 0 0 8px black;
+	border: 30px;
+	border-radius: 15px 15px 10px 10px;
+	
+}
+.content .box {
+	width: 48%;
+	float: right;
+	margin-right: 15px;
+	text-align: center;
+	box-shadow: 0 0 8px black;
+	border: 30px;
+	border-radius: 15px 15px 10px 10px;
+	overflow: hidden; /* تصویر درون باکس را برش می‌دهد */
+	position: relative;
+  }
+  
+  .content .box img {
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease;
+  }
+  
+  .content .box:hover img {
+	transform: scale(1.1); /* تصویر به اندازه ۱.۱ برابر زوم می‌شود */
+  }
+  .content .box {
+	width: 48%;
+	float: right;
+	margin-right: 15px;
+	text-align: center;
+	box-shadow: 0 0 8px black;
+	border: 30px;
+	border-radius: 15px 15px 10px 10px;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .content .box img {
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease;
+  }
+  
+  .content .box:hover img {
+	transform: scale(1.1);
+  }
+  
+  .content .box h3 {
+	margin-top: 14px; /* ایجاد فاصله بین تصویر و متن */
+  }
+  

@@ -1,0 +1,53 @@
+
+<?php
+
+define('url','http://localhost/AFM/');
+define('directory', "C:/xampp2/htdocs/AFM/");
+define('directory2', directory);
+define('loginpage',url.'auth/login');
+define('login_check',url.'check'.'/'.'login_check.php');
+define('logined', directory.'check'.'/'.'logined.php');
+define('header', directory.'lib/header.php');
+define('footer', directory.'lib/footer.php');
+define('dashboard', url.'home');
+define('page_dir',directory.'pages');
+define('style',url.'style/style.css');
+define('404', url.'lib/404_eror_page.php');
+define('login_page', url.'auth/login');
+define('back_ground', url.'images/login-back.jpg');
+define('pages_back', url.'images/back.jpg');
+define('add_nots', url.'pages/add-nots.php');
+define('prampet', directory.'dashboard/prampet/');
+define('user_pass', directory.'users.db');
+define('login_time', '300');
+define('login_fals', login_page.'?false');
+define('data_dir', 'C:\xampp2\htdocs\kharazmi\check\USER.data');
+define('login_check_dir', directory.'check/logined.php');
+define('admin_number', '09139071917');
+define('background_color', 'white');
+define('logo_url', url.'logo.png');
+define('dashboard_dir', url.'dashboard/');
+define('last_ip', directory.'check/last_login.data');
+define('math', url.'math/math.php');
+define('user_settings', url.'user/settings/user_settings.php');
+define('logindata', directory.'check/count_login.data');
+define('kapcha_page', 'http://localhost/kapcha.php');
+define('more', url.'more/more.php');
+define('in', url.'action/in.php');
+define('out', url.'action/out.php');
+define('db_manager', directory.'functions/db_manager.php');
+define('sing_up', url.'check/sing_up.php');
+define("sing_up_page" , url."auth/singup");
+define('main_url', url);
+define('main_url_2', url."/");
+define("site_setting_json",directory."config/site_setting.json");
+define("403_delete_account",10);
+
+
+define("BLE_TOKEN","328749505:r7I3CFaEeIV3qBtLEvbS188ZXyH7STqSofhDBXli");
+define("stay_time", "10000");
+require_once("function.php");
+define("defult_theme" , theme_reader());
+define("level_1" , "100");
+define("level_2" , "500");
+define("level_3" , "2000");

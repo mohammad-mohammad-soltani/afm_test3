@@ -9,3 +9,4 @@
 "# afm_publick" 
 "# afm.sadatsch.ir" 
 "# afm.sadatsch.ir2" 
+"# afm.sadatsch.ir2" 
