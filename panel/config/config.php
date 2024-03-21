@@ -1,5 +1,5 @@
 <?php
-define('url','http://localhost/AFM/panel/');
+define('url','https://afm.sadatsch.ir');
 define('directory', dirname(__DIR__)."/");
 define('directory2', directory);
 define('loginpage',url.'auth/login');
