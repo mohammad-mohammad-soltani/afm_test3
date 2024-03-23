@@ -1,5 +1,7 @@
 <?php
 require_once(dirname(__DIR__)."/markdown/vendor/erusev/parsedown/Parsedown.php");
+require_once(dirname(__DIR__)."/markdown/vendor/autoload.php");
+
 function get_month($month){
     switch ($month) {
         case '1':

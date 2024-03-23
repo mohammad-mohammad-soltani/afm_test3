@@ -1,6 +1,7 @@
 <?php 
 
 require_once(dirname(__DIR__)."/markdown/vendor/erusev/parsedown/Parsedown.php");
+$Parsedown = new Parsedown();
 if(trim($_POST["value"]) == ""){
     echo "لطفا متنی را وارد نمایید";
 }else{
@@ -44,7 +45,7 @@ if(trim($_POST["value"]) == ""){
                 $answer = json_decode($response,true)["result"];
            // $answer =  str_replace("\n"," <br> ",$answer);
            // Create a new Parsedown object
-                $Parsedown = new Parsedown();
+            
 
                 // Parse the Markdown content to HTML
                 $html = $Parsedown->text($answer);

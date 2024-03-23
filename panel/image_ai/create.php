@@ -69,7 +69,7 @@ require_once(header);
                                                     </div>
                                                 </li>-->
                                                 <li>
-                                                    <button class="btn btn-md btn-primary rounded-pill save-success" onclick="add_ai()" type="button"> ذخیره</button>
+                                                    <a href="<?php echo url."image_ai/image_list" ?>" class="btn btn-md btn-primary rounded-pill save-success">مشاهده سوابق تولید تصویر</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -108,11 +108,11 @@ require_once(header);
                                                                     <div class="form-control-wrap">
                                                                         <select id="sel_ai" class="form-select js-select2" >
                                                                            
-                                                                            <option value="1">dall-e : مدل هوش مصنوعی شرکت open ai</option>
-                                                                            <option value="2">pix art : مناسب تصاویر انیمیشنی</option>
-                                                                            <option value="3">GPT-3 : قدرت پاسخگویی نسبتا بالا</option>
-                                                                            <option value="4">bing : هوش مصنوعی bing</option>
-                                                                            <option value="5">GPT-4 web: قابلیت جستجو در اینترنت</option>
+                                                                            <option value="defult">پیش فرض</option>
+                                                                            <option value="pixart">pix art</option>
+                                                                            <option value="dalle">dall-e</option>
+                                                                            <option value="stablediffusion">stablediffusion</option>
+                                                                            <option value="prodia">prodia</option>
                                                                             
                                                                         </select>
                                                                     </div>

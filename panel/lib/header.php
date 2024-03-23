@@ -137,7 +137,7 @@ if ($result->num_rows > 0) {
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">
                                     <a href="<?php echo url."image_creator_ai" ?>" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-chat-fill"></em></span>
+                                        <span class="nk-menu-icon"><em class="icon ni ni-img"></em></span>
                                         <span class="nk-menu-text">تولید تصویر با هوش مصنوعی</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
@@ -232,6 +232,14 @@ if ($result->num_rows > 0) {
                                         <span class="nk-menu-text">اطلاعیه ها</span>
                                     </a>
                                 </li>-->
+                                <li class="nk-menu-item">
+                                    <a href="<?php echo url."tools/ai" ?>" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ni ni-opt"></em>
+                                        </span>
+                                        <span class="nk-menu-text">ابزار های هوش مصنوعی </span>
+                                    </a>
+                                </li>
                                 <li class="nk-menu-item">
                                     <a href="<?php echo url."API-manage" ?>" class="nk-menu-link">
                                         <span class="nk-menu-icon">

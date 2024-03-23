@@ -66,6 +66,9 @@ $pages = array (
     ,"image_creator_ai"=> array(
         "file_path"=> "image_ai/create.php",
     ),
+    "image_ai/image_list"=> array(
+        "file_path"=> "image_ai/image_list.php",
+    ),
     "chat-with-ai"=> array(
         "file_path"=> "chat/chat.php",
     ),
@@ -183,6 +186,15 @@ $pages = array (
     "chart/creator"=> array(
         "file_path"=> "chart/creator.php",
     ),
+    "ble_analys"=> array(
+        "file_path"=> "ble_crawler/crawler.php",
+    ),
+    "tools/ai"=> array(
+        "file_path"=> "tools/tools.php",
+    ),
+    "background/remove"=> array(
+        "file_path"=> "tools/tools/remove_background/remove.php",
+    ),
     
     "test_work"=> array(
         "file_path"=> "main.php",
@@ -209,7 +221,7 @@ function get_module_name() {
 }
 
 $link = get_module_name();
-if(!isset($pages[$link]) && !isset($dont_activated[$link]) && explode("/",$link)[0] != "WEB_C" && explode("/",$link)[0] != "users"&& explode("/",$link)[0] != "answer_the_question"&& explode("/",$link)[0] != "question_viwe"&& explode("/",$link)[0] != "get_answer"&& explode("/",$link)[0] != "start_chat"){
+if(!isset($pages[$link]) && !isset($dont_activated[$link]) && explode("/",$link)[0] != "WEB_C"&& explode("/",$link)[0] != "REMOVE_BACK" && explode("/",$link)[0] != "users"&& explode("/",$link)[0] != "answer_the_question"&& explode("/",$link)[0] != "question_viwe"&& explode("/",$link)[0] != "get_answer"&& explode("/",$link)[0] != "start_chat"){
     require_once(__DIR__."/lib/404_error_page.php");
     
 }elseif(explode("/",$link)[0] == "WEB_C"){
@@ -227,6 +239,13 @@ if(!isset($pages[$link]) && !isset($dont_activated[$link]) && explode("/",$link)
                     return $client_data;
                 }
                require_once(directory."math/math_render.php");
+            }
+            if($operator == "REMOVE_BACK"){
+                function math_ai_init(){
+                    global $client_data;
+                    return $client_data;
+                }
+               require_once(directory."tools/tools/remove_background/handle.php");
             }
             if($operator == "AI_CHAT"){
                 function ai_init(){
