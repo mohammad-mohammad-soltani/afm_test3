@@ -16,7 +16,7 @@ if(!isset($_GET["file"])){
             </div>
         </div>
         <br>
-        <button type="button" class="btn btn-primary col-12" id="send"><span class="text-center">حذف پس زمینه</span></button>
+        <button type="button" class="btn btn-primary col-12" id="send"><span class="text-center">افزایش کیفیت تصویر</span></button>
         </div>
         </div>
         <div class="col-lg-6 col-sm-6" >
@@ -34,7 +34,7 @@ if(!isset($_GET["file"])){
     formData.append('file', $('#file')[0].files[0]);
     answer_box.innerHTML = "در حال ارسال درخواست ...";
     $.ajax({
-        url : '<?php echo url."WEB_C/".$_SESSION["WEB_C"]."/REMOVE_BACK" ?>',
+        url : '<?php echo url."WEB_C/".$_SESSION["WEB_C"]."/QUALITY_UP" ?>',
         type : 'POST',
         data : formData,
         processData: false,  // tell jQuery not to process the data

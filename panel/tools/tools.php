@@ -20,7 +20,7 @@ require_once(header);
                 </div>
             </div><!-- .card -->
         </a><!-- .col -->
-        <div class="col-sm-6 col-xxl-3 filter-item ai" data-category="ai" style="position: absolute; left: 461.4px; top: 0px;">
+        <a href="<?php echo url."quality/up" ?>" class="col-sm-6 col-xxl-3 filter-item ai" data-category="ai" style="position: absolute; left: 461.4px; top: 0px;">
             <div class="card card-full">
                 <div class="card-inner">
                     <div class="d-inline-flex position-absolute end-0 top-0 me-4 mt-4">
@@ -33,7 +33,7 @@ require_once(header);
                     <p class="sub-text">در این ابزار تصویری را آپلود کنید تا هوش مصنوعی کیفیت آن را افزایش دهد</p>
                 </div>
             </div><!-- .card -->
-        </div><!-- .col -->
+        </a><!-- .col -->
         <div class="col-sm-6 col-xxl-3 filter-item ai" data-category="ai" style="position: absolute; left: 0px; top: 181.688px;">
             <div class="card card-full">
                 <div class="card-inner">

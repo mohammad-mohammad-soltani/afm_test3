@@ -14,10 +14,10 @@ if (isset($_FILES['file']) && $_FILES['file']['error'] === UPLOAD_ERR_OK) {
             $targetFile = $targetDir . $filename; // مسیر نهایی فایل با نام ارسالی
 
             if (move_uploaded_file($_FILES['file']['tmp_name'], $targetFile)) {
-                $result = file_get_contents("https://api3.haji-api.ir/majid/tools/image/remove/background?url=".url."tools/uploads/".$filename);
+                $result = file_get_contents("https://api3.haji-api.ir/majid/tools/image/upscale?url=".url."tools/uploads/".$filename);
                 $result = json_decode($result , true);
                 if($result["success"] && $result["result"] != "Error!" ){
-                    $file = "remove_back".$_SESSION["WEB_C"]."_".uniqid().".png";
+                    $file = "up_quality".$_SESSION["WEB_C"]."_".uniqid().".png";
                     $result_file = dirname(dirname(__DIR__)).'/uploads/'.$file;
                     $data = file_get_contents($result["result"]);
                     file_put_contents($result_file , $data);
@@ -28,7 +28,7 @@ if (isset($_FILES['file']) && $_FILES['file']['error'] === UPLOAD_ERR_OK) {
                         </a>
                         <div class="gallery-body card-inner align-center justify-between flex-wrap g-2">
                             
-                            <p>پس زمینه تصویر شما با موفقیت حذف گردید!</p>
+                            <p>کیفیت تصویر شما با موفقیت افزایش یافت</p>
                         </div>
                     </div>
                    <?php
